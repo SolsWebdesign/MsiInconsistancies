@@ -1,0 +1,28 @@
+{
+  "name": "solswebdesign/msi-inconsistencies",
+  "description": "Shows and compensate the MSI Inconsistencies in Admin",
+  "type": "magento2-module",
+  "authors": [
+    {
+      "name": "Peter Banchev"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "magento/framework": "*",
+    "magento/module-backend": "*",
+    "magento/module-inventory-reservation-cli": "*"
+  },
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "SolsWebdesign\\MsiInconsistencies\\": ""
+    }
+  }
+}

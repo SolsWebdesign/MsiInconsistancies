@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Product : Sols Webdesign Msi Inconsistencies
+*
+* @copyright Copyright © 2023 Sols Webdesign. All rights reserved.
+* @author    Peter Banchev
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="SolsWebdesign_MsiInconsistencies::menu" title="Sols Webdesign" translate="title"
+                          sortOrder="75">
+                    <resource id="SolsWebdesign_MsiInconsistencies::index" title="Msi Inconsistencies Grid"/>
+                </resource>
+
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="SolsWebdesign_MsiInconsistencies::config"
+                                      title="Msi Inconsistencies Configuration"
+                                      sortOrder="60"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

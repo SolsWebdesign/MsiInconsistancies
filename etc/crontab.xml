@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+* Product : Sols Webdesign Msi Inconsistencies
+*
+* @copyright Copyright © 2023 Sols Webdesign. All rights reserved.
+* @author    Peter Banchev
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="msi_inconsistencies_email_notification_cron"
+             instance="SolsWebdesign\MsiInconsistencies\Cron\InconsistenciesEmail"
+             method="execute">
+            <config_path>sols_webdesign_msi_inconsistencies/general/schedule</config_path>
+        </job>
+    </group>
+</config>

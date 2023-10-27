@@ -1,0 +1,27 @@
+<!--
+/**
+* Product : Sols Webdesign Msi Inconsistencies
+*
+* @copyright Copyright © 2023 Sols Webdesign. All rights reserved.
+* @author    Peter Banchev
+*/
+-->
+<!--@subject {{trans "%size MSI inconsistencies to be compensated." size=$size.size}} @-->
+<!--@vars {
+"var content.content|raw":"Content",
+"var content.size:"Size"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+{{trans "There are %size MSI inconsistencies to be compensated." size=$size}}
+
+<table>
+    <tr>
+        <td>{{trans "Order ID"}}</td>
+        <td>{{trans "Details"}}</td>
+    </tr>
+    {{trans "%content" content=$content |raw}}
+</table>
+
+{{template config_path="design/email/footer_template"}}

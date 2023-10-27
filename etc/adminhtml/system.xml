@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!--
+/**
+* Product : Sols Webdesign Msi Inconsistencies
+*
+* @copyright Copyright © 2023 Sols Webdesign. All rights reserved.
+* @author    Peter Banchev
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sols_webdesign" translate="label" sortOrder="100">
+            <label>Sols Webdesign</label>
+        </tab>
+        <section id="sols_webdesign_msi_inconsistencies" translate="label" sortOrder="250" showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>Msi Inconsistencies</label>
+            <tab>sols_webdesign</tab>
+            <resource>SolsWebdesign_MsiInconsistencies::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General settings</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Activate E-mail Reminder</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="send_email_to" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Send To</label>
+                    <comment>Comma separated Email addresses</comment>
+                </field>
+                <field id="schedule" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Cron Schedule</label>
+                </field>
+                <field id="threshold" translate="label" type="text" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Threshold</label>
+                    <comment>Send an email if the number of inconsistencies is higher than or equal to the threshold.
+                    </comment>
+                </field>
+                <field id="loggingtype" translate="label" type="select" sortOrder="50" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Logging Types</label>
+                    <source_model>SolsWebdesign\MsiInconsistencies\Model\Source\LoggingTypes</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

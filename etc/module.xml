@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Product : Sols Webdesign Msi Inconsistencies
+*
+* @copyright Copyright © 2023 Sols Webdesign. All rights reserved.
+* @author    Peter Banchev
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="SolsWebdesign_MsiInconsistencies">
+        <sequence>
+            <module name="Magento_Inventory"/>
+        </sequence>
+    </module>
+</config>
