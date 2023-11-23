@@ -76,7 +76,7 @@ class MassCompensate extends Action
             $selectedItems = $selection;
         }
 
-          if (($selectedItems === null) && is_array($excluded)) {
+        if (($selectedItems === null) && is_array($excluded)) {
             $selectedItems = array_diff($selection, $excluded);
         }
 
